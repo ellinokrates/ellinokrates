@@ -5950,6 +5950,9 @@ section.form .container {
 
 
 
+
+
+
 #header1-5g .mbr-section-title {
   font-size: 46px;
   font-family: 'Roboto', sans-serif;
@@ -5982,6 +5985,22 @@ section.form .container {
 .cid-sJuck13r8P .centerinput {
   margin: auto;
   width: 50%;
+}
+#header3-1dw .mbr-section-title,
+#header3-1dw .mbr-section-subtitle {
+  text-align: center;
+}
+#header3-1dw .mbr-section-title DIV {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+#header3-1dw .mbr-section-title {
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+}
+#header3-1dw .mbr-section-subtitle {
+  font-family: 'Roboto', sans-serif;
 }
 #header3-1dg .mbr-section-title,
 #header3-1dg .mbr-section-subtitle {
@@ -21160,5 +21179,153 @@ section.form .container {
   font-family: 'Roboto', sans-serif;
 }
 #contacts3-1ds H4 {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+.cid-ufbgV76oVp {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+.cid-ufbgV76oVp .mbr-section {
+  text-align: center;
+  color: #fff;
+}
+#ext_menu-1dy .hide-buttons .nav-btn {
+  display: none !important;
+}
+#ext_menu-1dy .navbar-caption {
+  color: #ffffff;
+  font-size: 14px;
+}
+#ext_menu-1dy .navbar-toggler {
+  color: #ffffff;
+}
+#ext_menu-1dy .close-icon::before,
+#ext_menu-1dy .close-icon::after {
+  background-color: #ffffff;
+}
+#ext_menu-1dy .link,
+#ext_menu-1dy .dropdown-item {
+  color: #ffffff;
+}
+#ext_menu-1dy .link {
+  font-size: 0.8rem;
+}
+#ext_menu-1dy .dropdown-item,
+#ext_menu-1dy .nav-dropdown-sm .link {
+  font-size: 0.866rem;
+}
+#ext_menu-1dy .link:hover,
+#ext_menu-1dy .dropdown-item:hover,
+#ext_menu-1dy .link:focus,
+#ext_menu-1dy .dropdown-item:focus {
+  color: #c0a375;
+}
+#ext_menu-1dy .link[aria-expanded="true"],
+#ext_menu-1dy .dropdown-menu {
+  background: #000000;
+}
+#ext_menu-1dy .nav-dropdown-sm .link:focus,
+#ext_menu-1dy .nav-dropdown-sm .link:hover,
+#ext_menu-1dy .nav-dropdown-sm .dropdown-item:focus,
+#ext_menu-1dy .nav-dropdown-sm .dropdown-item:hover {
+  background: #000000!important;
+}
+#ext_menu-1dy .navbar,
+#ext_menu-1dy .nav-dropdown-sm,
+#ext_menu-1dy .nav-dropdown-sm .link[aria-expanded="true"],
+#ext_menu-1dy .nav-dropdown-sm .dropdown-menu {
+  background: #000000;
+}
+#ext_menu-1dy .bg-color.transparent .link {
+  color: #ffffff;
+  transition: none;
+}
+#ext_menu-1dy .bg-color.transparent.opened .link {
+  transition: color 0.2s ease-in-out;
+}
+#ext_menu-1dy .bg-color.transparent.opened .link:hover,
+#ext_menu-1dy .bg-color.transparent.opened .link:focus {
+  color: #c0a375;
+}
+#ext_menu-1dy .link[aria-expanded="true"],
+#ext_menu-1dy .dropdown-item[aria-expanded="true"] {
+  color: #c0a375!important;
+}
+#ext_menu-1dy .navbar-caption SPAN {
+  font-size: 14px;
+}
+#ext_menu-1dy A {
+  font-size: 9px;
+  font-family: 'Roboto', sans-serif;
+}
+.cid-ufbgV7sEUP {
+  padding-top: 120px;
+  padding-bottom: 0px;
+  background-color: #ffffff;
+}
+.cid-ufbgV7sEUP .mbr-section {
+  text-align: center;
+  color: #fff;
+}
+.cid-ufbgV7sEUP H3 {
+  text-align: center;
+}
+.cid-ufbgV7sEUP P {
+  text-align: center;
+}
+.cid-ufbgV7JTnh {
+  padding-top: 0px;
+  padding-bottom: 45px;
+  background-color: #ffffff;
+}
+.cid-ufbgV7JTnh .mbr-section {
+  text-align: center;
+  color: #fff;
+}
+.cid-ufbgV7JTnh H3 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+}
+.cid-ufbgV7JTnh P {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+#social-buttons4-1e1 .mbr-section-title,
+#social-buttons4-1e1 .btn-social {
+  color: #fff;
+}
+#social-buttons4-1e1 .mbr-section-title {
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+}
+#contacts3-1e2 P {
+  font-family: 'Roboto', sans-serif;
+}
+#contacts3-1e2 .list-group-text {
+  font-family: 'Open Sans', sans-serif;
+}
+#contacts3-1e2 LI {
+  color: #c0a375;
+}
+#contacts3-1e2 .btn {
+  font-family: 'Open Sans', sans-serif;
+}
+#contacts3-1e2 STRONG {
+  font-family: 'Roboto', sans-serif;
+}
+#contacts3-1e2 H4 {
   font-family: 'Roboto', sans-serif;
 }
