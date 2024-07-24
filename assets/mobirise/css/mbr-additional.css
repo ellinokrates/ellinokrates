@@ -1141,7 +1141,6 @@ section.form .container {
 
 
 
-
 #ext_menu-j .hide-buttons .nav-btn {
   display: none !important;
 }
@@ -1239,9 +1238,14 @@ section.form .container {
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
 }
-#msg-box4-1f8 P {
+.cid-ujqk4xeeMd {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+.cid-ujqk4xeeMd .mbr-section {
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  color: #fff;
 }
 #msg-box8-1ea .mbr-section-title,
 #msg-box8-1ea p {
@@ -6054,6 +6058,9 @@ section.form .container {
 
 
 
+
+
+
 #ext_menu-l .hide-buttons .nav-btn {
   display: none !important;
 }
@@ -6155,6 +6162,22 @@ section.form .container {
 .cid-sJuck13r8P .centerinput {
   margin: auto;
   width: 50%;
+}
+#header3-1f9 .mbr-section-title,
+#header3-1f9 .mbr-section-subtitle {
+  text-align: center;
+}
+#header3-1f9 .mbr-section-title DIV {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+#header3-1f9 .mbr-section-title {
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+}
+#header3-1f9 .mbr-section-subtitle {
+  font-family: 'Roboto', sans-serif;
 }
 #header3-1eq .mbr-section-title,
 #header3-1eq .mbr-section-subtitle {
@@ -21924,5 +21947,153 @@ section.form .container {
   font-family: 'Roboto', sans-serif;
 }
 #contacts3-1eo H4 {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+#ext_menu-1fa .hide-buttons .nav-btn {
+  display: none !important;
+}
+#ext_menu-1fa .navbar-caption {
+  color: #ffffff;
+  font-size: 14px;
+}
+#ext_menu-1fa .navbar-toggler {
+  color: #ffffff;
+}
+#ext_menu-1fa .close-icon::before,
+#ext_menu-1fa .close-icon::after {
+  background-color: #ffffff;
+}
+#ext_menu-1fa .link,
+#ext_menu-1fa .dropdown-item {
+  color: #ffffff;
+}
+#ext_menu-1fa .link {
+  font-size: 0.8rem;
+}
+#ext_menu-1fa .dropdown-item,
+#ext_menu-1fa .nav-dropdown-sm .link {
+  font-size: 0.866rem;
+}
+#ext_menu-1fa .link:hover,
+#ext_menu-1fa .dropdown-item:hover,
+#ext_menu-1fa .link:focus,
+#ext_menu-1fa .dropdown-item:focus {
+  color: #c0a375;
+}
+#ext_menu-1fa .link[aria-expanded="true"],
+#ext_menu-1fa .dropdown-menu {
+  background: #000000;
+}
+#ext_menu-1fa .nav-dropdown-sm .link:focus,
+#ext_menu-1fa .nav-dropdown-sm .link:hover,
+#ext_menu-1fa .nav-dropdown-sm .dropdown-item:focus,
+#ext_menu-1fa .nav-dropdown-sm .dropdown-item:hover {
+  background: #000000!important;
+}
+#ext_menu-1fa .navbar,
+#ext_menu-1fa .nav-dropdown-sm,
+#ext_menu-1fa .nav-dropdown-sm .link[aria-expanded="true"],
+#ext_menu-1fa .nav-dropdown-sm .dropdown-menu {
+  background: #000000;
+}
+#ext_menu-1fa .bg-color.transparent .link {
+  color: #ffffff;
+  transition: none;
+}
+#ext_menu-1fa .bg-color.transparent.opened .link {
+  transition: color 0.2s ease-in-out;
+}
+#ext_menu-1fa .bg-color.transparent.opened .link:hover,
+#ext_menu-1fa .bg-color.transparent.opened .link:focus {
+  color: #c0a375;
+}
+#ext_menu-1fa .link[aria-expanded="true"],
+#ext_menu-1fa .dropdown-item[aria-expanded="true"] {
+  color: #c0a375!important;
+}
+#ext_menu-1fa .navbar-caption SPAN {
+  font-size: 14px;
+}
+#ext_menu-1fa A {
+  font-size: 9px;
+  font-family: 'Roboto', sans-serif;
+}
+.cid-ujqf26NEd3 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+.cid-ujqf26NEd3 .mbr-section {
+  text-align: center;
+  color: #fff;
+}
+.cid-ujqf271VTl {
+  padding-top: 120px;
+  padding-bottom: 0px;
+  background-color: #ffffff;
+}
+.cid-ujqf271VTl .mbr-section {
+  text-align: center;
+  color: #fff;
+}
+.cid-ujqf271VTl H3 {
+  text-align: center;
+}
+.cid-ujqf271VTl P {
+  text-align: center;
+}
+.cid-ujqf27gvAV {
+  padding-top: 0px;
+  padding-bottom: 45px;
+  background-color: #ffffff;
+}
+.cid-ujqf27gvAV .mbr-section {
+  text-align: center;
+  color: #fff;
+}
+.cid-ujqf27gvAV H3 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+}
+.cid-ujqf27gvAV P {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+#social-buttons4-1fe .mbr-section-title,
+#social-buttons4-1fe .btn-social {
+  color: #fff;
+}
+#social-buttons4-1fe .mbr-section-title {
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+}
+#contacts3-1ff P {
+  font-family: 'Roboto', sans-serif;
+}
+#contacts3-1ff .list-group-text {
+  font-family: 'Open Sans', sans-serif;
+}
+#contacts3-1ff LI {
+  color: #c0a375;
+}
+#contacts3-1ff .btn {
+  font-family: 'Open Sans', sans-serif;
+}
+#contacts3-1ff STRONG {
+  font-family: 'Roboto', sans-serif;
+}
+#contacts3-1ff H4 {
   font-family: 'Roboto', sans-serif;
 }
