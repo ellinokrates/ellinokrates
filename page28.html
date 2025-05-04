@@ -61,7 +61,86 @@
  
 
 
+
+<style>
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .search-bar input[type="text"] {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    font-size: 16px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+  }
+  .video-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.video-presenter {
+  font-size: 14px;
+  color: #555;
+}
+  .video-link {
+    display: block;
+    padding: 12px 20px;
+    margin: 12px auto;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: #333;
+    max-width: 700px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .video-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    background-color: #ffffff;
+  }
+
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .searchb {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #000000;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  .video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+</style>
  </head>
+
+
 <body>
 
 <!-- Analytics -->
@@ -282,1946 +361,772 @@ document.addEventListener("DOMContentLoaded", function() {
                     window.scrollTo(0, currentPosition);
                 }
             </script>
- 			<input id="search" class="centerinput" type="text" placeholder="Αναζήτηση..">
-  			<button type="submit" onclick="myFunction()">Αναζήτηση</button>
+ 			<div class="search-bar">
+                <input id="search" class="centerinput" type="text" oninput="myFunction()" placeholder="Αναζήτηση..">
+                <button type="submit" class="searchb" onclick="myFunction()">Αναζήτηση</button>
+            </div>
+            <div class="video-grid">
+
+                <!--[newItem]-->
+
+                <a class="video-link article" href="to-dieyuynthrio-2-5-2025.html">
+                   <div class="video-title">Το διευθυντήριο και η Ευρώπη του Κουντενχόβε Καλλέργη. 2-5-2025</div>
+                   <div class="video-presenter">Ανδρέας Πετρόπουλος</div>
+                </a>
+
+                <a class="video-link article" href="Anastito-o-UEOS-27-4-2025.html">
+                    <div class="video-title">Ἀναστήτω ὁ Θεός, καὶ διασκορπισθήτωσαν οἱ ἐχθροὶ αὐτοῦ. 27-4-2025</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="to-aorato-konklvio-kai-h-dioksi-tou-ethnikismou-8-4-2025.html">
+                    <div class="video-title">Το αόρατο κονκλάβιο και η δίωξη του Εθνικισμού στην Ευρώπη. 8-4-2025</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="ragiasidmos-200-xronia-meta-akoma-upodouloi-21-3-2025.html">
+                    <div class="video-title">Ραγιαδισμός, 200 χρόνια μετά, ακόμα υπόδουλοι!  21-3-2025</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="eksousia-dieutharmenwn-antixristvn-14-3-2025.html">
+                    <div class="video-title">Εξουσία διεφθαρμένων, αντίχριστων και εγκληματιών. 14-3-2025</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="ellinikos-ethnikismos-h-apantisi-stous-ex8rous-7-3-2025.html">
+                    <div class="video-title">Ελληνικός Εθνικισμός, η απάντηση στους εχθρούς της Ελλάδας.  7-3-2025</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="idrymata-diafuoras-kai-katastrofis-tou-ellinikou-eunoys-28-2-2025.html">
+                    <div class="video-title">Ιδρύματα διαφθοράς και καταστροφής του Ελληνικού Έθνους. 28-2-2025</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="oi-kaluteroi-sunergates-twn-tourkwcn-oi-ellhnes-15-2-2025.html">
+                    <div class="video-title">Οι καλύτεροι συνεργάτες των Τούρκων, οι Έλληνες πολιτικοί. 15-2-2025</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="trampismos-kai-mesi-anatoli-8-2-2025.html">
+                    <div class="video-title">Τραμπισμός και Μέση Ανατολή. 8-2-2025</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="yperanw-ths-nikis-h-doja-metajas-1-2-2025.html">
+                    <div class="video-title">Υπεράνω της νίκης, η Δόξα. Αφιέρωμα στην μνήμη του Ιωάννη Μεταξά. 1-2-2025</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="tourkia-hpa-israel-ena-skoteino-mellon-1-2-2025.html">
+                    <div class="video-title">Τουρκία - ΗΠΑ - Ισραήλ, ένα σκοτεινό μέλλον επιφυλάσσεται για τους Έλληνες 1-2-2025</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="republicans-greece-20-1-2025.html">
+                    <div class="video-title">Ρεπουμπλικανισμός στην Ελλάδα. 20-1-2025</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="allhlwn-katafronountes-18-1-2025.html">
+                    <div class="video-title">Αλλήλων καταφρονούντες αλλήλοις αρεσκεύονται. 18-1-2025</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="exuros-mas-to-kratos-11-1-2025.html">
+                    <div class="video-title">Εχθρός μας το κράτος. 11-1-2025</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="kratiki-apodomisi-21-12-2024.html">
+                    <div class="video-title">Κρατική αποδόμηση 21-12-2024.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="dekembriana-koumounistiki-antarsia.html">
+                    <div class="video-title">ΔΕΚΕΜΒΡΙΑΝΑ, Η ΚΟΜΜΟΥΝΙΣΤΙΚΗ ΑΝΤΑΡΣΙΑ ΤΟΥ 1944</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="ellas-kentro-synwmosias-14-12-2024.html">
+                    <div class="video-title">Η Ελλάς στο κέντρο μιας συνωμοσίας. 14-12-2024</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="xwris-ethnikismo-xwris-mellon.html">
+                    <div class="video-title">Χωρίς Εθνικισμό, χωρίς μέλλον 23-11-2024</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="epaneklogi-tramp-upo-etehnikistiko-prisma.html">
+                    <div class="video-title">Επανεκλογή Τραμπ υπό Eθνικιστικό πρίσμα.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="andreas-petropoulos-agionori-korinthias.html">
+                    <div class="video-title">Ανδρέας Πετρόπουλος - Αγιονόρι Κορινθίας</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="h-galliki-apodomisi-olumpiakwn-agwnwn.html">
+                    <div class="video-title">Η γαλλική αποδόμηση των Ολυμπιακών αγώνων</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="metapoliteutiko-agos.html">
+                    <div class="video-title">Μεταπολιτευτικό Άγος.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="50-xronia-prodosias-meros-b.html">
+                    <div class="video-title">1974-2024, 50 χρόνια προδοσίας (Μέρος Β`).</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="1974-2024-50-xronia-prodosias.html">
+                    <div class="video-title">1974-2024, 50 χρόνια προδοσίας (Μέρος Α`).</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="ton-ellina-prwta-na-ton-trelanoun.html">
+                    <div class="video-title">Τον Έλληνα πρώτα θα τον τρελάνουν.. και μετά βλέπουν</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="paneyropi-ex8ros-twn-ethnwn.html">
+                    <div class="video-title">Η Ενωμένη Ευρώπη (Πανευρώπη), ο εχθρός των Εθνών.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="EE-Eyropaiki-Eksapatisi.html">
+                    <div class="video-title">Ε.Ε. : Ευρωπαϊκή Εξαπάτησης.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="h_ftoxopoihsh_tou_ellina.html">
+                    <div class="video-title">Η φτωχοποίηση του Έλληνα.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="h_xrysh_dikatatoria_21_apriliou.html">
+                    <div class="video-title">Η χρυσή δικτατορία της 21ης Απριλίου</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="rizes-ethnikistikou-kinimatos-meros-a.html">
+                    <div class="video-title">Οι ρίζες του εθνικιστικού κινήματος εν Ελλάδι ( Μέρος Α ).</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="hthiki_ptwsi.html">
+                    <div class="video-title">Η ηθική πτώση των Ελλήνων από το σύστημα διακυβέρνησης.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="h_ee_mas_xrwstaei.html">
+                    <div class="video-title">Η Ευρωπαϊκή Ένωση μας χρωστάει, δεν την χρωστάμε.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="http://lakip.eu/evraikos-diktilos-kai-to-mellon.html">
+                    <div class="video-title">Ο Εβραϊκόs δάκτυλος και τα μελλοντικά του σχέδια για Ελλάδα και Ορθοδοξία</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="http://lakip.eu/koinovoulio-kai-ragiadismo.html">
+                    <div class="video-title">Κοινοβούλιο και Ραγιαδισμός</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="simitis-aaron-avouri.html">
+                    <div class="video-title">Σημίτης (Ααρών Αβουρή) ένας εχθρός της Ελλάδος.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="agglia-exthros-ellados.html">
+                    <div class="video-title">Η Αγγλία, ο διαχρονικός εχθρός της Ελλάδος.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="polutexnio-jenes-yphresises-sukofantia.html">
+                    <div class="video-title">Πολυτεχνείο , ξένες υπηρεσίες , συκοφαντίες και ψεύδη</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="http://lakip.eu/apodimos-ellinismo-kai-oi-entolodoxoi.html">
+                    <div class="video-title">Ο απόδημος Ελληνισμός και οι εντολοδόχοι καταστροφείς του.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="http://lakip.eu/mesi-anatoli-istoriki-anadromi.html">
+                    <div class="video-title">Μέση Ανατολή, μία ιστορική αναδρομή.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page170.html">
+                    <div class="video-title">Παλαιστινιακό ζήτημα υπό Εθνικιστικό πρίσμα (Μέρος 2).</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page169.html">
+                    <div class="video-title">Παλαιστινιακό ζήτημα υπό Εθνικιστικό πρίσμα.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page168.html">
+                    <div class="video-title">Εθνικισμός από το χθες στο αύριο.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page167.html">
+                    <div class="video-title">Ελλάς Προτεκτοράτο, Έλληνες υπόδουλοι.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page166.html">
+                    <div class="video-title">Ο ρόλος του Στρατού και των εισαγoμένων διεφθαρμένων πολιτικών.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page165.html">
+                    <div class="video-title">Κοινοβούλιο, η πηγή κάθε συμφοράς.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page163.html">
+                    <div class="video-title">Σεξουαλική αποκτήνωση μικρών παιδιών με τις ευλογίες του κοινοβουλευτικού καθεστώτος.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page162.html">
+                    <div class="video-title">Ανύπαρκτη Δικαιοσύνη στον καιρό των Μεταπανδεμικών καθεστώτων.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page161.html">
+                    <div class="video-title">Οι εκλογές ως πρόδρομος μίας νέας καταστροφής.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page160.html">
+                    <div class="video-title">Ο Εθνικισμός στην Ελλάδα</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page159.html">
+                    <div class="video-title">Η Μεγάλη εβδομάδα και η κοινοβουλευτική καταπίεση.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page158.html">
+                    <div class="video-title">Ο εθνικισμός θα αλλάξει τις «ράγες» του Έθνους.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page157.html">
+                    <div class="video-title">Μασονία και ξενοκίνητοι πολιτικοί δεσπόζουν διαχρονικά εν Ελλάδι (Μέρος Β).</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page156.html">
+                    <div class="video-title">Μασονία και ξενοκίνητοι πολιτικοί δεσπόζουν διαχρονικά εν Ελλάδι (Μέρος Α)</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="ethnikitragodiaB.html">
+                    <div class="video-title">Εθνική τραγωδία - Κοινοβουλευτική δολοφονία (Μέρος Β).</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="http://lakip.eu/ethniki-tragodia-koinovoulio.html">
+                    <div class="video-title">Εθνική τραγωδία - Κοινοβουλευτική δολοφονία (Μέρος Α)</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="navmaxia-salaminas.html">
+                    <div class="video-title">Η ναυμαχία της Σαλαμίνος, η σωτηρία της Ευρώπης.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page155.html">
+                    <div class="video-title">Εθνικισμός ενάντια σε νέα τάξη πραγμάτων</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="http://lakip.eu/page154.html">
+                    <div class="video-title">Κοινοβουλευτική διαφθορά και φίμωση του εθνικισμού</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page153.html">
+                    <div class="video-title">Βασιλεία υπό εθνικιστικό πρίσμα και ο ρόλος της μασονίας</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="http://lakip.eu/page152.html">
+                    <div class="video-title">Τα τέσσερα ολέθρια πλήγματα της Μεταπολίτευσης προς το Ελληνικό Έθνος</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page147.html">
+                    <div class="video-title">Οι τρεις σταθμοί μετάλλαξης στον ψυχισμό του Ελληνικού Έθνους</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page150.html">
+                    <div class="video-title">Tα αίτια κάθε τραγωδίας που επισυμβαίνει στον Ελλαδικό χώρο, υπό εθνικιστικό πρίσμα.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page149.html">
+                    <div class="video-title">Τα γεγονότα τρέχουν γοργά, ο εθνικισμός θα μείνει στάσιμος;</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page146.html">
+                    <div class="video-title">Επικαιρότητα και εθνικισμός εν Ελλάδι.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page145.html">
+                    <div class="video-title">Ουκρανία ή Ρωσία; Εθνικιστική ματιά επί του Ουκρανικού ζητήματος.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page144.html">
+                    <div class="video-title">Από την δολοφονία του Εθνικού Κυβερνήτη Ιωάννη Μεταξά στην Μεταπολιτευτική τραγωδία των Ιμίων</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page143.html">
+                    <div class="video-title">Η Μεταπολιτευτική τραγωδία  στο πέρας μίας χιονόπτωσης (Μέρος δεύτερον).</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="http://lakip.eu/page148.html">
+                    <div class="video-title"></div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page141.html">
+                    <div class="video-title">Πολυτεχνείο, η παράκρουσις ενός λαού.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page134.html">
+                    <div class="video-title">Η Διαχρονική προδοσία των πολιτικών.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page135.html">
+                    <div class="video-title">Φτάνει πιά μέ τούς ψευτοεθνικιστές !</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page136.html">
+                    <div class="video-title">Πρώτη ομιλία για την νέα αγωνιστική περίοδο.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page137.html">
+                    <div class="video-title">Δύο λόγια για την εθνική δράση του Κοσμά του Αιτωλού.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page133.html">
+                    <div class="video-title">Δολοφονική επίθεση σε δημοσιογράφο. Ποιούς "δημοκράτες" να ενόχλησε άραγε;</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page132.html">
+                    <div class="video-title">Μερικά συμπεράσματα για τα νεοϊδρυθέντα πατριωτικά κόμματα.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page131.html">
+                    <div class="video-title">Η Λύση στο πρόβλημα της Ελλάδος.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page130.html">
+                    <div class="video-title">Ο Σιωνισμός όπως τον έζησε ένας εβραίος.</div>
+                    <div class="video-presenter">συναγωνιστής  Κωνσταντίνος</div>
+                </a>
+                
+                <a class="video-link article" href="page129.html">
+                    <div class="video-title">Η Αγία τού Θεού Σοφία, ο εγκάθετος εβραίος Ροζάκης καί ή παγίδα τής Χάγης</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page128.html">
+                    <div class="video-title">Η Ελλάς μπορεί να κάνει ότι συμφωνία θέλει, αρκεί να ζημιώνεται απο αυτήν.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page127.html">
+                    <div class="video-title">H Eλλάς φινλανδοποιείται και εκκλησία και στρατός μένουν αδρανείς</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page109.html">
+                    <div class="video-title">Οι Εργάτες έχουν πατρίδα. Ζήτω η Εργατική Πρωτομαγιά.</div>
+                    <div class="video-presenter">Λόγος του Κυβερνήτη Ιωάννη Μεταξά την 1η Μαϊου 1939.</div>
+                </a>
+                
+                <a class="video-link article" href="page107.html">
+                    <div class="video-title">Σχολιασμός επικαιρότητος 24-4-20</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page106.html">
+                    <div class="video-title">21η Απριλίου ΟΛΗ Η ΑΛΗΘΕΙΑ - 2ο μέρος</div>
+                    <div class="video-presenter">εκπομπή ΕΝΩΣΗ ΕΛΛΗΝΩΝ ΠΑΤΡΙΩΤΩΝ - Ανδρέας Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page105.html">
+                    <div class="video-title">21η Απριλίου ΟΛΗ Η ΑΛΗΘΕΙΑ - 1ο μέρος</div>
+                    <div class="video-presenter">εκπομπή ΕΝΩΣΗ ΕΛΛΗΝΩΝ ΠΑΤΡΙΩΤΩΝ - Ανδρέας Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page104.html">
+                    <div class="video-title">79 χρόνια απο τη μάχη των Οχυρών Μεταξά</div>
+                    <div class="video-presenter">συναγωνιστής  Κωνσταντίνος</div>
+                </a>
+                
+                <a class="video-link article" href="page103.html">
+                    <div class="video-title">Κορωναϊός. Η χρυσή ευκαιρία της κυνοβουλευτικής δικτατορίας.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page102.html">
+                    <div class="video-title">Πώς κυβερνάται ο κόσμος (ομιλία από το μακρινό 1993! )</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page101.html">
+                    <div class="video-title">Τηλεφωνική παρέμβαση του Λοχαγού σε εκπομπή με θέμα τα γεγονότα του Εβρου.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page100.html">
+                    <div class="video-title">Σωτήριος Σοφιανόπουλος.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page99.html">
+                    <div class="video-title">Ελληνοκρατία, το αντίδοτο στον κοινοβουλευτισμό.</div>
+                    <div class="video-presenter">συναγωνιστής Κωνσταντίνος</div>
+                </a>
+                
+                <a class="video-link article" href="page94.html">
+                    <div class="video-title">Όχι να φύγουν οι λαθρομετανάστες αλλά να τους φορτωθούν οι "άλλοι".</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page98.html">
+                    <div class="video-title">Να παραιτηθούν κάθε ελπίδος όσοι δεν αγωνίζονται.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page97.html">
+                    <div class="video-title">Ελλαδικόν Κράτος. Το μόνο κράτος που είναι εναντίον στον λαό του.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page93.html#msg-box4-gk">
+                    <div class="video-title">Ελληνοτουρκικά, η φάρσα τού Βερολίνου καί ο πεμπτοφαλαγγίτης μητροπολίτης.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page86.html#msg-box4-gk">
+                    <div class="video-title">Η μάστιγα του μεταναστευτικού και ο γραικυλισμός τών ελλήνων</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page64.html#msg-box4-gk">
+                    <div class="video-title">Ποιοί είναι πίσω από τόν Ερντογάν.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page54.html#msg-box4-gk">
+                    <div class="video-title">Καλά Χριστούγεννα, και όχι καλές γιορτές.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page70.html#msg-box4-gk">
+                    <div class="video-title">Ανθελληνικό κέντρο εντός τών τειχών</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page71.html#msg-box4-gk">
+                    <div class="video-title">Ελληνες !! Σηκωθείτε καί Αγωνισθείτε !!</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page44.html#header3-ja">
+                    <div class="video-title">Αεροψεκασμοί. Απαντήσεις από έναν ειδικό.</div>
+                    <div class="video-presenter">Νικόλαος  Κατσαρός</div>
+                </a>
+                
+                <a class="video-link article" href="page43.html#header3-jb">
+                    <div class="video-title">Καλωσόρισμα Β. Στίγκα</div>
+                    <div class="video-presenter">Β.Στίγκας - Ανδρέας Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page29.html#header3-jc">
+                    <div class="video-title">Απαγόρευση καπνίσματος, λόγοι υγείας; η μήπως λόγοι εξουσίας;</div>
+                    <div class="video-presenter">Ανδρέας Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page33.html#header3-jd">
+                    <div class="video-title">Αυτήν την φορά θα εκδικηθούμε.</div>
+                    <div class="video-presenter">Ανδρέας Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page32.html#header3-je">
+                    <div class="video-title">Αφήγηση της μάχης του Μελιγαλά, απο μιά επιβιώσασα.</div>
+                    <div class="video-presenter">Ειρήνη Δορκοφίκη</div>
+                </a>
+                
+                <a class="video-link article" href="page34.html#header3-jf">
+                    <div class="video-title">Ο Ανδρέας Πετρόπουλος στην εκπομπή "Η φωνή σου Ελληνα".</div>
+                    <div class="video-presenter">Ενωση Ελλήνων Πατριωτών</div>
+                </a>
+                
+                <a class="video-link article" href="page35.html#header3-jg">
+                    <div class="video-title">Επίσκεψη του μοναχού Μωυσή εκ Πρεβέζης.</div>
+                    <div class="video-presenter">μοναχός Μωυσής - Ανδρέας Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page72.html#header3-jg">
+                    <div class="video-title">Ομιλία στην Θεσσαλονίκη.</div>
+                    <div class="video-presenter">Ανδρέας Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page37.html#header3-ji">
+                    <div class="video-title">Η Ελλάς χρειάζεται και τον τελευταίο εθνικιστή.</div>
+                    <div class="video-presenter">Ανδρέας Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page38.html#header3-jj">
+                    <div class="video-title">Πώς οι σιωνισταί εργαλειοποιούν προς όφελος τους επιχειρήσεις.</div>
+                    <div class="video-presenter">Ανδρέας Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page39.html#header3-jk">
+                    <div class="video-title">Οσοι εθνικιστές είναι ανένταχτοι, είναι ανύπαρκτοι και εξυπηρετούν τον εχθρό.</div>
+                    <div class="video-presenter">Εκπομπή ΕΛΛΗΝΟΚΡΑΤΙΑ</div>
+                </a>
+                
+                <a class="video-link article" href="page42.html#header3-jl">
+                    <div class="video-title">Ο Θεός να έχει καλά τους εχθρούς μας</div>
+                    <div class="video-presenter">Εκπομπή ΕΛΛΗΝΟΚΡΑΤΙΑ</div>
+                </a>
+                
+                <a class="video-link article" href="page40.html#header3-jm">
+                    <div class="video-title">"Η Κύπρος δεν πρέπει ποτέ να ενωθεί με την μητέρα Ελλάδα"</div>
+                    <div class="video-presenter">Εκπομπή ΕΛΛΗΝΟΚΡΑΤΙΑ</div>
+                </a>
+                
+                <a class="video-link article" href="page41.html#header3-jn">
+                    <div class="video-title">Ανδρέας Πετρόπουλος & Κωνσταντίνος Πλεύρης.</div>
+                    <div class="video-presenter">Εκπομπή ΕΛΛΗΝΟΚΡΑΤΙΑ</div>
+                </a>
+                
+                <a class="video-link article" href="page48.html#header3-jo">
+                    <div class="video-title">Η ''άγνωστη'' καταστροφική συμφωνία τής Βαρκελώνης</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page49.html#header3-jo">
+                    <div class="video-title">Εάν δεν φτιάξουμε ελληνικό εθνικιστικό κίνημα μην περιμένουμε καμία σωτηρία.</div>
+                    <div class="video-presenter">Εκπομπή ΕΛΛΗΝΟΚΡΑΤΙΑ</div>
+                </a>
+                
+                <a class="video-link article" href="page50.html#header3-jo">
+                    <div class="video-title">Η Ιστορία - κτηματολόγιο της δυναστείας των Μητσοτάκηδων</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page51.html#header3-jo">
+                    <div class="video-title">Λογαριασμός εξυπηρετήσεως χρέους,</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page73.html#header3-jo">
+                    <div class="video-title">Έλληνες αποτινάξτε τα δεσμά της δουλείας σας.</div>
+                    <div class="video-presenter">Εκπομπή ΕΛΛΗΝΟΚΡΑΤΙΑ</div>
+                </a>
+                
+                <a class="video-link article" href="page56.html#header3-jo">
+                    <div class="video-title">Οι προδοτικές δηλώσεις του παρελθόντος, απο έναν "μελλοντικό" πρωθυπουργό.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page63.html#header3-jo">
+                    <div class="video-title">Η Ανάληψη της εξουσίας απο τον Μητσοτάκη θα είναι και ο πολιτικός του τάφος.</div>
+                    <div class="video-presenter">εκπομπή ΕΛΛΗΝΟΚΡΑΤΙΑ</div>
+                </a>
+                
+                <a class="video-link article" href="page62.html#header3-jo">
+                    <div class="video-title">Μιά μεγάλη καταστροφή, μια μεγάλη ευκαιρία.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page61.html#header3-jo">
+                    <div class="video-title">Νέος Αρχιεπίσκοπος Αμερικής και εβραϊκή</div>
+                    <div class="video-presenter">Συναγωνιστής Κωνσταντίνος</div>
+                </a>
+                
+                <a class="video-link article" href="page60.html#header3-jo">
+                    <div class="video-title">ΟΙ τράπεζες απο εργαλείο ανάπτυξης, ως μέσο επιβολής της Νέας Τάξης</div>
+                    <div class="video-presenter">εκπομπή ΕΛΕΥΘΕΡΟΙ ΕΛΛΗΝΕΣ</div>
+                </a>
+                
+                <a class="video-link article" href="page58.html#header3-jo">
+                    <div class="video-title">Όλες μας οι καταστροφές προήλθαν απο τους "εθνικόφρονες" της γαλάζιας παράταξης.</div>
+                    <div class="video-presenter">εκπομπή ΕΛΛΗΝΟΚΡΑΤΙΑ</div>
+                </a>
+                
+                <a class="video-link article" href="page53.html#header3-jo">
+                    <div class="video-title">Με καλεσμένο έναν από τους ιδρυτές του κινήματος της 4ης Αυγούστου</div>
+                    <div class="video-presenter">Ανδρέας Πετρόπουλος - Σπυρίδων  Σταυρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page55.html#header3-jo">
+                    <div class="video-title">Η εκλογική πορεία του εθνικισμού σε Ευρώπη και Ελλάδα</div>
+                    <div class="video-presenter">εκπομπή ΕΛΛΗΝΟΚΡΑΤΙΑ</div>
+                </a>
+                
+                <a class="video-link article" href="page57.html#header3-jo">
+                    <div class="video-title">Η ψήφος των πολλών και η "λογική του ενός"</div>
+                    <div class="video-presenter">εκπομπή ΕΛΕΥΘΕΡΟΙ ΕΛΛΗΝΕΣ</div>
+                </a>
+                
+                <a class="video-link article" href="page66.html#header3-jo">
+                    <div class="video-title">Ο Ελληνας πάντα έβγαζε λόγω συμφέροντος, το μάτι του άλλου έλληνα</div>
+                    <div class="video-presenter">εκπομπή ΕΛΕΥΘΕΡΟΙ ΕΛΛΗΝΕΣ</div>
+                </a>
+                
+                <a class="video-link article" href="page67.html#header3-jo">
+                    <div class="video-title">Αφιερωμένο στους αφελληνισμένους γραικύλους.</div>
+                    <div class="video-presenter">Συναγωνιστές Κώστας - Κωνσταντίνος</div>
+                </a>
+                
+                <a class="video-link article" href="page69.html#header3-jo">
+                    <div class="video-title">Εθνικισμός και Χρόνος</div>
+                    <div class="video-presenter">Συναγωνιστής  Κωνσταντίνος</div>
+                </a>
+                
+                <a class="video-link article" href="page90.html#header3-jo">
+                    <div class="video-title">Εντυπώσεις απο ένα καθολικό - σκανδιναβικό πάσχα</div>
+                    <div class="video-presenter">Συναγωνιστής  Μίκης</div>
+                </a>
+                
+                <a class="video-link article" href="page68.html#header3-jo">
+                    <div class="video-title">Ο Δούρειος ίππος του "γενεαλογικού" τουρισμού.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page74.html#header3-jo">
+                    <div class="video-title">Σύντομη αναφορά στον Αντώνιο Φωστερίδη, "Τσαούς Αντόν"</div>
+                    <div class="video-presenter">Συναγωνιστής  Κωνσταντίνος</div>
+                </a>
+                
+                <a class="video-link article" href="page75.html#header3-jo">
+                    <div class="video-title">Οι Αμερικανοί ενδιαφέρθηκαν για τις τουρκικές παραβιάσεις μετά απο 35 χρόνια.</div>
+                    <div class="video-presenter">εκπομπή ΕΛΛΗΝΟΚΡΑΤΙΑ</div>
+                </a>
+                
+                <a class="video-link article" href="page76.html#header3-jo">
+                    <div class="video-title">Κομμουνισταί και λιμπεραλισταί είναι εχθροί του λαού.</div>
+                    <div class="video-presenter">εκπομπή  ΕΛΛΗΝΟΚΡΑΤΙΑ</div>
+                </a>
+                
+                <a class="video-link article" href="page77.html#header3-jo">
+                    <div class="video-title">Η θέση του εθνικισμού έναντι άλλων φυλών</div>
+                    <div class="video-presenter">Συναγωνιστής  Κωνσταντίνος</div>
+                </a>
+                
+                <a class="video-link article" href="page59.html#msg-box4-gk">
+                    <div class="video-title">Ο Αγώνας της ΕΟΚΑ και η αμέριστη "συμπαράσταση" των κομμουνιστών.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page78.html#header3-jo">
+                    <div class="video-title">Ολοκαύτωμα Καλαβρύτων και μαρτυρίες.</div>
+                    <div class="video-presenter">εκπομπή ΕΛΛΗΝΟΚΡΑΤΙΑ</div>
+                </a>
+                
+                <a class="video-link article" href="page79.html#header3-jo">
+                    <div class="video-title">Αφιερωμένο σε όσους λένε οτι θέλουν "να πάρουν τα όπλα"</div>
+                    <div class="video-presenter">Συναγωνιστής Κωνσταντίνος</div>
+                </a>
+                
+                <a class="video-link article" href="page80.html#header3-jo">
+                    <div class="video-title">Η Μασονία είναι μια κοινωνική αδικία</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page81.html#header3-jo">
+                    <div class="video-title">Είμαστε ελληνορθόδοξοι και όχι ιουδαιοχριστιανοί.</div>
+                    <div class="video-presenter">εκπομπή ΕΛΛΗΝΟΚΡΑΤΙΑ</div>
+                </a>
+                
+                <a class="video-link article" href="page82.html#header3-jo">
+                    <div class="video-title">Εθνικισμός. Η απαγορευμένη λέξη.</div>
+                    <div class="video-presenter">εκπομπή ΕΛΕΥΘΕΡΟΙ ΕΛΛΗΝΕΣ</div>
+                </a>
+                
+                <a class="video-link article" href="page83.html#header3-jo">
+                    <div class="video-title">Αναθεώρηση σκέψης και όχι συντάγματος.</div>
+                    <div class="video-presenter">Συναγωνιστής  Πέτρος</div>
+                </a>
+                
+                <a class="video-link article" href="page84.html#header3-jo">
+                    <div class="video-title">Η περίπτωση της Tay, ενός μη πολιτικά ορθού chatrobot.</div>
+                    <div class="video-presenter">Συναγωνιστής  Κωνσταντίνος</div>
+                </a>
+                
+                <a class="video-link article" href="page85.html#header3-jo">
+                    <div class="video-title">Η Ελλάς όφειλε να πολεμήσει για την Μακεδονία με την Σερβία το 1992.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page91.html#header3-jo">
+                    <div class="video-title">Πρωτόκολλα των Σοφών της Σιών. Πλαστά; ή επίκαιρα;</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page92.html#header3-jo">
+                    <div class="video-title">Η μεγαλύτερη ληστεία όλων των εποχών.</div>
+                    <div class="video-presenter">Garret John Loporto</div>
+                </a>
+                
+                <a class="video-link article" href="page87.html#header3-jo">
+                    <div class="video-title">Πρωτόκολλα των Σοφών της Σιών. Πλαστά; ή επίκαιρα;</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page88.html#header3-jo">
+                    <div class="video-title">Αφιέρωμα στόν Βασίλειο Β΄τον Βουλγαροκτόνο.</div>
+                    <div class="video-presenter">Σπυρίδων  Σταυρόπουλος</div>
+                </a>
+                
+                <a class="video-link article" href="page134.html">
+                    <div class="video-title">Η Διαχρονική προδοσία των πολιτικών.</div>
+                    <div class="video-presenter">Ανδρέας  Πετρόπουλος</div>
+                </a> 
+                  
+                <!-- more links -->
+            </div>
+
           </div>
         </div>
     </div>
 </section>
 
-
-<!--[newItem]-->
-
-<section class="mbr-section mbr-section__container article" id="header3-1fv" data-rv-view="671" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h4 class="smallertitle mbr-section-title display-2"><a href="Anastito-o-UEOS-27-4-2025.html" class="text-black">Ἀναστήτω ὁ Θεός, καὶ διασκορπισθήτωσαν οἱ ἐχθροὶ αὐτοῦ. 27-4-2025</a></h4>
-                <p class="smalldesc mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section><section class="mbr-section mbr-section__container article" id="header3-1fv" data-rv-view="671" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h4 class="smallertitle mbr-section-title display-2"><a href="to-aorato-konklvio-kai-h-dioksi-tou-ethnikismou-8-4-2025.html" class="text-black">Το αόρατο κονκλάβιο και η δίωξη του Εθνικισμού στην Ευρώπη. 8-4-2025 </a></h4>
-                <p class="smalldesc mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section><section class="mbr-section mbr-section__container article" id="header3-1fv" data-rv-view="671" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h4 class="smallertitle mbr-section-title display-2"><a href="ragiasidmos-200-xronia-meta-akoma-upodouloi-21-3-2025.html" class="text-black">Ραγιαδισμός, 200 χρόνια μετά, ακόμα υπόδουλοι!  21-3-2025</a></h4>
-                <p class="smalldesc mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section><section class="mbr-section mbr-section__container article" id="header3-1fv" data-rv-view="671" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h4 class="smallertitle mbr-section-title display-2"><a href="eksousia-dieutharmenwn-antixristvn-14-3-2025.html" class="text-black">Εξουσία διεφθαρμένων, αντίχριστων και εγκληματιών. 14-3-2025</a></h4>
-                <p class="smalldesc mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section><section class="mbr-section mbr-section__container article" id="header3-1fv" data-rv-view="671" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h4 class="smallertitle mbr-section-title display-2"><a href="ellinikos-ethnikismos-h-apantisi-stous-ex8rous-7-3-2025.html" class="text-black">Ελληνικός Εθνικισμός, η απάντηση στους εχθρούς της Ελλάδας.  7-3-2025</a></h4>
-                <p class="smalldesc mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section><section class="mbr-section mbr-section__container article" id="header3-1fv" data-rv-view="671" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h4 class="smallertitle mbr-section-title display-2"><a href="idrymata-diafuoras-kai-katastrofis-tou-ellinikou-eunoys-28-2-2025.html" class="text-black">Ιδρύματα διαφθοράς και καταστροφής του Ελληνικού Έθνους. 28-2-2025</a></h4>
-                <p class="smalldesc mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section><section class="mbr-section mbr-section__container article" id="header3-1fv" data-rv-view="671" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h4 class="smallertitle mbr-section-title display-2"><a href="oi-kaluteroi-sunergates-twn-tourkwcn-oi-ellhnes-15-2-2025.html" class="text-black">Οι καλύτεροι συνεργάτες των Τούρκων, οι Έλληνες πολιτικοί. 15-2-2025</a></h4>
-                <p class="smalldesc mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section><section class="mbr-section mbr-section__container article" id="header3-1fv" data-rv-view="671" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h4 class="smallertitle mbr-section-title display-2"><a href="trampismos-kai-mesi-anatoli-8-2-2025.html" class="text-black">Τραμπισμός και Μέση Ανατολή. 8-2-2025</a></h4>
-                <p class="smalldesc mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section><section class="mbr-section mbr-section__container article" id="header3-1fv" data-rv-view="671" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h4 class="smallertitle mbr-section-title display-2"><a href="yperanw-ths-nikis-h-doja-metajas-1-2-2025.html" class="text-black">Υπεράνω της νίκης, η Δόξα. Αφιέρωμα στην μνήμη του Ιωάννη Μεταξά. 1-2-2025</a></h4>
-                <p class="smalldesc mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section><section class="mbr-section mbr-section__container article" id="header3-1fv" data-rv-view="671" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h4 class="smallertitle mbr-section-title display-2"><a href="tourkia-hpa-israel-ena-skoteino-mellon-1-2-2025.html" class="text-black">Τουρκία - ΗΠΑ - Ισραήλ, ένα σκοτεινό μέλλον επιφυλάσσεται για τους Έλληνες 1-2-2025</a></h4>
-                <p class="smalldesc mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section><section class="mbr-section mbr-section__container article" id="header3-1fv" data-rv-view="671" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h4 class="smallertitle mbr-section-title display-2"><a href="republicans-greece-20-1-2025.html" class="text-black">Ρεπουμπλικανισμός στην Ελλάδα. 20-1-2025</a></h4>
-                <p class="smalldesc mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section><section class="mbr-section mbr-section__container article" id="header3-1fv" data-rv-view="671" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h4 class="smallertitle mbr-section-title display-2"><a href="allhlwn-katafronountes-18-1-2025.html" class="text-black">Αλλήλων καταφρονούντες αλλήλοις αρεσκεύονται. 18-1-2025</a></h4>
-                <p class="smalldesc mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section><section class="mbr-section mbr-section__container article" id="header3-1fv" data-rv-view="671" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h4 class="smallertitle mbr-section-title display-2"><a href="exuros-mas-to-kratos-11-1-2025.html" class="text-black">Εχθρός μας το κράτος. 11-1-2025</a></h4>
-                <p class="smalldesc mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section><section class="mbr-section mbr-section__container article" id="header3-1fv" data-rv-view="671" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h4 class="smallertitle mbr-section-title display-2"><a href="kratiki-apodomisi-21-12-2024.html" class="text-black">Κρατική αποδόμηση 21-12-2024.</a></h4>
-                <p class="smalldesc mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section><section class="mbr-section mbr-section__container article" id="header3-1fv" data-rv-view="671" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h4 class="smallertitle mbr-section-title display-2"><a href="dekembriana-koumounistiki-antarsia.html" class="text-black">ΔΕΚΕΜΒΡΙΑΝΑ, Η ΚΟΜΜΟΥΝΙΣΤΙΚΗ ΑΝΤΑΡΣΙΑ ΤΟΥ 1944</a></h4>
-                <p class="smalldesc mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section><section class="mbr-section mbr-section__container article" id="header3-1fv" data-rv-view="671" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h4 class="smallertitle mbr-section-title display-2"><a href="ellas-kentro-synwmosias-14-12-2024.html" class="text-black">Η Ελλάς στο κέντρο μιας συνωμοσίας. 14-12-2024</a></h4>
-                <p class="smalldesc mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section><section class="mbr-section mbr-section__container article" id="header3-1fv" data-rv-view="665" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="smallertitle mbr-section-title display-2"><a href="xwris-ethnikismo-xwris-mellon.html" class="text-black">Χωρίς Εθνικισμό, χωρίς μέλλον 23-11-2024</a></h3>
-                <p class="smalldesc mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section><section class="mbr-section mbr-section__container article" id="header3-1fv" data-rv-view="667" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="smallertitle mbr-section-title display-2"><a href="epaneklogi-tramp-upo-etehnikistiko-prisma.html" class="text-black">Επανεκλογή Τραμπ υπό Eθνικιστικό πρίσμα.</a></h3>
-                <p class="smalldesc mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section><section class="mbr-section mbr-section__container article" id="header3-1fv" data-rv-view="669" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="smallertitle mbr-section-title display-2"><a href="andreas-petropoulos-agionori-korinthias.html" class="text-black">Ανδρέας Πετρόπουλος - Αγιονόρι Κορινθίας</a></h3>
-                <p class="smalldesc mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section><section class="mbr-section mbr-section__container article" id="header3-1fv" data-rv-view="671" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="h-galliki-apodomisi-olumpiakwn-agwnwn.html" class="text-black">Η γαλλική αποδόμηση των Ολυμπιακών αγώνων</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="mbr-section mbr-section__container article" id="header3-1fv" data-rv-view="673" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="metapoliteutiko-agos.html" class="text-black">Μεταπολιτευτικό Άγος.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section article" id="msg-box8-1er" data-rv-view="687" style="background-image: url(assets/images/2-1920x65561.jpg); padding-top: 80px; padding-bottom: 80px;">
-
-    <div class="mbr-overlay" style="opacity: 0.2; background-color: rgb(34, 34, 34);">
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-xs-center">
-                
-                
-                
-            </div>
-        </div>
-    </div>
-
-</section>
-
-
-<section class="mbr-section mbr-section__container article" id="header3-1f9" data-rv-view="675" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="50-xronia-prodosias-meros-b.html" class="text-black">1974-2024, 50 χρόνια προδοσίας (Μέρος Β`).</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-1eq" data-rv-view="677" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="1974-2024-50-xronia-prodosias.html" class="text-black">1974-2024, 50 χρόνια προδοσίας (Μέρος Α`).</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-1ep" data-rv-view="679" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="ton-ellina-prwta-na-ton-trelanoun.html" class="text-black">Τον Έλληνα πρώτα θα τον τρελάνουν.. και μετά βλέπουν</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-1e3" data-rv-view="681" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="paneyropi-ex8ros-twn-ethnwn.html" class="text-black">Η Ενωμένη Ευρώπη (Πανευρώπη), ο εχθρός των Εθνών.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-1dw" data-rv-view="683" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="EE-Eyropaiki-Eksapatisi.html" class="text-black">Ε.Ε. : Ευρωπαϊκή Εξαπάτησης.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-1dg" data-rv-view="685" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="h_ftoxopoihsh_tou_ellina.html" class="text-black">Η φτωχοποίηση του Έλληνα.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section article" id="msg-box8-1er" data-rv-view="687" style="background-image: url(assets/images/2-1920x6550.jpg); padding-top: 80px; padding-bottom: 80px;">
-
-    <div class="mbr-overlay" style="opacity: 0.2; background-color: rgb(34, 34, 34);">
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-xs-center">
-                
-                
-                
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-1df" data-rv-view="690" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="h_xrysh_dikatatoria_21_apriliou.html" class="text-black">Η χρυσή δικτατορία της 21ης Απριλίου</a><a href="page145.html" class="text-black" style="font-size: 18px; background-color: rgb(239, 239, 239);">ς.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-1d8" data-rv-view="692" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="rizes-ethnikistikou-kinimatos-meros-a.html" class="text-black">Οι ρίζες του εθνικιστικού κινήματος εν Ελλάδι ( Μέρος Α ).</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-1d1" data-rv-view="694" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="hthiki_ptwsi.html" class="text-black">Η ηθική πτώση των Ελλήνων από το σύστημα διακυβέρνησης.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-1cd" data-rv-view="696" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="h_ee_mas_xrwstaei.html" class="text-black">Η Ευρωπαϊκή Ένωση μας χρωστάει, δεν την χρωστάμε.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-1cc" data-rv-view="698" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="http://lakip.eu/evraikos-diktilos-kai-to-mellon.html" class="text-black">Ο Εβραϊκόs δάκτυλος και τα μελλοντικά του σχέδια για Ελλάδα και Ορθοδοξία</a><a href="page145.html" class="text-black" style="font-size: 18px; background-color: rgb(239, 239, 239);">.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section article" id="msg-box8-1d0" data-rv-view="700" style="background-image: url(assets/images/2-1920x65561.jpg); padding-top: 80px; padding-bottom: 80px;">
-
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-xs-center">
-                
-                
-                
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-1cb" data-rv-view="703" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="http://lakip.eu/koinovoulio-kai-ragiadismo.html" class="text-black">Κοινοβούλιο και Ραγιαδισμός</a><a href="page145.html" class="text-black" style="font-size: 18px; background-color: rgb(239, 239, 239);">.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-1at" data-rv-view="705" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="simitis-aaron-avouri.html" class="text-black">Σημίτης (Ααρών Αβουρή) ένας εχθρός της Ελλάδος.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-1as" data-rv-view="707" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="agglia-exthros-ellados.html" class="text-black">Η Αγγλία, ο διαχρονικός εχθρός της Ελλάδος.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-1ar" data-rv-view="709" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="polutexnio-jenes-yphresises-sukofantia.html" class="text-black">Πολυτεχνείο , ξένες υπηρεσίες , συκοφαντίες και ψεύδη</a><a href="page145.html" class="text-black" style="font-size: 18px; background-color: rgb(239, 239, 239);">.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-1ap" data-rv-view="711" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="http://lakip.eu/apodimos-ellinismo-kai-oi-entolodoxoi.html" class="text-black">Ο απόδημος Ελληνισμός και οι εντολοδόχοι καταστροφείς του.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section article" id="msg-box8-1au" data-rv-view="713" style="background-image: url(assets/images/2-1920x6550.jpg); padding-top: 80px; padding-bottom: 80px;">
-
-    <div class="mbr-overlay" style="opacity: 0.2; background-color: rgb(34, 34, 34);">
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-xs-center">
-                
-                
-                
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-1ao" data-rv-view="716" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="http://lakip.eu/mesi-anatoli-istoriki-anadromi.html" class="text-black">Μέση Ανατολή, μία ιστορική αναδρομή.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-1ah" data-rv-view="718" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page170.html" class="text-black">Παλαιστινιακό ζήτημα υπό Εθνικιστικό πρίσμα (Μέρος 2).</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-19l" data-rv-view="720" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page169.html" class="text-black">Παλαιστινιακό ζήτημα υπό Εθνικιστικό πρίσμα.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-19k" data-rv-view="722" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page168.html" class="text-black">Εθνικισμός από το χθες στο αύριο.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-19j" data-rv-view="724" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page167.html" class="text-black">Ελλάς Προτεκτοράτο, Έλληνες υπόδουλοι.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section article" id="msg-box8-1ag" data-rv-view="726" style="background-image: url(assets/images/2-1920x65561.jpg); padding-top: 80px; padding-bottom: 80px;">
-
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-xs-center">
-                
-                
-                
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-19i" data-rv-view="729" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page166.html" class="text-black">Ο ρόλος του Στρατού και των εισαγoμένων διεφθαρμένων πολιτικών.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-19h" data-rv-view="731" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page165.html" class="text-black">Κοινοβούλιο, η πηγή κάθε συμφοράς.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-18r" data-rv-view="733" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page163.html" class="text-black">Σεξουαλική αποκτήνωση μικρών παιδιών με τις ευλογίες του κοινοβουλευτικού καθεστώτος.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-18d" data-rv-view="735" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page162.html" class="text-black">Ανύπαρκτη Δικαιοσύνη στον καιρό των Μεταπανδεμικών καθεστώτων.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-186" data-rv-view="737" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page161.html" class="text-black">Οι εκλογές ως πρόδρομος μίας νέας καταστροφής.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-17z" data-rv-view="739" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page160.html" class="text-black">Ο Εθνικισμός στην Ελλάδα</a><a href="page145.html" class="text-black" style="font-size: 18px; background-color: rgb(239, 239, 239);">.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section article" id="msg-box8-18q" data-rv-view="741" style="background-image: url(assets/images/2-1920x6550.jpg); padding-top: 80px; padding-bottom: 80px;">
-
-    <div class="mbr-overlay" style="opacity: 0.2; background-color: rgb(34, 34, 34);">
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-xs-center">
-                
-                
-                
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-17s" data-rv-view="744" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page159.html" class="text-black">Η Μεγάλη εβδομάδα και η κοινοβουλευτική καταπίεση.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-172" data-rv-view="746" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page158.html" class="text-black">Ο εθνικισμός θα αλλάξει τις «ράγες» του Έθνους.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-171" data-rv-view="748" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page157.html" class="text-black">Μασονία και ξενοκίνητοι πολιτικοί δεσπόζουν διαχρονικά εν Ελλάδι (Μέρος Β).</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-170" data-rv-view="750" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page156.html" class="text-black">Μασονία και ξενοκίνητοι πολιτικοί δεσπόζουν διαχρονικά εν Ελλάδι (Μέρος Α)</a><a href="page145.html" class="text-black" style="font-size: 18px; background-color: rgb(239, 239, 239);">.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-16z" data-rv-view="752" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="ethnikitragodiaB.html" class="text-black">Εθνική τραγωδία - Κοινοβουλευτική δολοφονία (Μέρος Β).</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-16r" data-rv-view="754" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="http://lakip.eu/ethniki-tragodia-koinovoulio.html" class="text-black">Εθνική τραγωδία - Κοινοβουλευτική δολοφονία (Μέρος Α)</a>.</h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section article" id="msg-box8-16y" data-rv-view="756" style="background-image: url(assets/images/2-1920x65561.jpg); padding-top: 80px; padding-bottom: 80px;">
-
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-xs-center">
-                
-                
-                
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-169" data-rv-view="759" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="navmaxia-salaminas.html" class="text-black">Η ναυμαχία της Σαλαμίνος, η σωτηρία της Ευρώπης.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-15s" data-rv-view="761" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page155.html" class="text-black">Εθνικισμός ενάντια σε νέα τάξη πραγμάτων</a>.</h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-15r" data-rv-view="763" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="http://lakip.eu/page154.html" class="text-black">Κοινοβουλευτική διαφθορά και φίμωση του εθνικισμού</a>.</h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-15k" data-rv-view="765" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page153.html" class="text-black">Βασιλεία υπό εθνικιστικό πρίσμα και ο ρόλος της μασονίας</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-15d" data-rv-view="767" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="http://lakip.eu/page152.html" class="text-black">Τα τέσσερα ολέθρια πλήγματα της Μεταπολίτευσης προς το Ελληνικό Έθνος</a>.</h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-14r" data-rv-view="769" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page147.html" class="text-black">Οι τρεις σταθμοί μετάλλαξης στον ψυχισμό του Ελληνικού Έθνους</a>.</h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section article" id="msg-box8-155" data-rv-view="771" style="background-image: url(assets/images/2-1920x6550.jpg); padding-top: 80px; padding-bottom: 80px;">
-
-    <div class="mbr-overlay" style="opacity: 0.2; background-color: rgb(34, 34, 34);">
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-xs-center">
-                
-                
-                
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-154" data-rv-view="774" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page150.html" class="text-black">Tα αίτια κάθε τραγωδίας που επισυμβαίνει στον Ελλαδικό χώρο, υπό εθνικιστικό πρίσμα.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-147" data-rv-view="776" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page149.html" class="text-black">Τα γεγονότα τρέχουν γοργά, ο εθνικισμός θα μείνει στάσιμος;</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-14d" data-rv-view="778" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page146.html" class="text-black">Επικαιρότητα και εθνικισμός εν Ελλάδι.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-13n" data-rv-view="780" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page145.html" class="text-black">Ουκρανία ή Ρωσία; Εθνικιστική ματιά επί του Ουκρανικού ζητήματος.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-13f" data-rv-view="782" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page144.html" class="text-black">Από την δολοφονία του Εθνικού Κυβερνήτη Ιωάννη Μεταξά στην Μεταπολιτευτική τραγωδία των Ιμίων</a><a href="page141.html" class="text-black" style="font-size: 18px; background-color: rgb(239, 239, 239);">.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-138" data-rv-view="784" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page143.html" class="text-black">Η Μεταπολιτευτική τραγωδία  στο πέρας μίας χιονόπτωσης (Μέρος δεύτερον).</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section article" id="msg-box8-13g" data-rv-view="786" style="background-image: url(assets/images/2-1920x65561.jpg); padding-top: 80px; padding-bottom: 80px;">
-
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-xs-center">
-                
-                
-                
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-131" data-rv-view="789" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><p><a href="http://lakip.eu/page148.html" class="text-primary"></a><a href="http://lakip.eu/page148.html" class="text-black">Η Μεταπολιτευτική τραγωδία&nbsp; στο πέρας μίας χιονόπτωσης (Μέρος πρώτον).</a></p></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-129" data-rv-view="791" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page141.html" class="text-black">Πολυτεχνείο, η παράκρουσις ενός λαού.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-xk" data-rv-view="793" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page134.html" class="text-black">Η Διαχρονική προδοσία των πολιτικών.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-xj" data-rv-view="795" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page135.html" class="text-black">Φτάνει πιά μέ τούς ψευτοεθνικιστές !</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-xh" data-rv-view="797" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page136.html" class="text-black">Πρώτη ομιλία για την νέα αγωνιστική περίοδο.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-xi" data-rv-view="799" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page137.html" class="text-black">Δύο λόγια για την εθνική δράση του Κοσμά του Αιτωλού.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section article" id="msg-box8-xf" data-rv-view="801" style="background-image: url(assets/images/2-1920x6550.jpg); padding-top: 80px; padding-bottom: 80px;">
-
-    <div class="mbr-overlay" style="opacity: 0.2; background-color: rgb(34, 34, 34);">
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-xs-center">
-                
-                
-                
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-ww" data-rv-view="804" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page133.html" class="text-black">Δολοφονική επίθεση σε δημοσιογράφο. Ποιούς "δημοκράτες" να ενόχλησε άραγε;</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-wv" data-rv-view="806" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page132.html" class="text-black">Μερικά συμπεράσματα για τα νεοϊδρυθέντα πατριωτικά κόμματα.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-wu" data-rv-view="808" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page131.html" class="text-black">Η Λύση στο πρόβλημα της Ελλάδος.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-wd" data-rv-view="810" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page130.html" class="text-black">Ο Σιωνισμός όπως τον έζησε ένας εβραίος.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">συναγωνιστής &nbsp;Κωνσταντίνος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-w8" data-rv-view="812" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page129.html" class="text-black">Η Αγία τού Θεού Σοφία, ο εγκάθετος εβραίος Ροζάκης καί ή παγίδα τής Χάγης</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-w7" data-rv-view="814" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><p><a href="page128.html"></a><a href="page128.html" class="text-black">Η Ελλάς μπορεί να κάνει ότι συμφωνία θέλει, αρκεί να ζημιώνεται απο αυτήν.</a></p></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section article" id="msg-box8-w6" data-rv-view="816" style="background-image: url(assets/images/2-1920x65561.jpg); padding-top: 80px; padding-bottom: 80px;">
-
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-xs-center">
-                
-                
-                
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-vv" data-rv-view="819" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page127.html" class="text-black">H Eλλάς φινλανδοποιείται και εκκλησία και στρατός μένουν αδρανείς</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-s4" data-rv-view="821" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page109.html" class="text-black">Οι Εργάτες έχουν πατρίδα. Ζήτω η Εργατική Πρωτομαγιά.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Λόγος του Κυβερνήτη Ιωάννη Μεταξά την 1η Μαϊου 1939.</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-qt" data-rv-view="823" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page107.html" class="text-black">Σχολιασμός επικαιρότητος 24-4-20</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-qs" data-rv-view="825" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page106.html" class="text-black">21η Απριλίου ΟΛΗ Η ΑΛΗΘΕΙΑ - 2ο μέρος</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">εκπομπή ΕΝΩΣΗ ΕΛΛΗΝΩΝ ΠΑΤΡΙΩΤΩΝ - Ανδρέας Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-qr" data-rv-view="827" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page105.html" class="text-black">21η Απριλίου ΟΛΗ Η ΑΛΗΘΕΙΑ - 1ο μέρος</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">εκπομπή ΕΝΩΣΗ ΕΛΛΗΝΩΝ ΠΑΤΡΙΩΤΩΝ - Ανδρέας Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-qq" data-rv-view="829" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page104.html" class="text-black">79 χρόνια απο τη μάχη των Οχυρών Μεταξά</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">συναγωνιστής &nbsp;Κωνσταντίνος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section article" id="msg-box8-qp" data-rv-view="831" style="background-image: url(assets/images/2-1920x6550.jpg); padding-top: 80px; padding-bottom: 80px;">
-
-    <div class="mbr-overlay" style="opacity: 0.2; background-color: rgb(34, 34, 34);">
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-xs-center">
-                
-                
-                
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-pz" data-rv-view="834" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page103.html" class="text-black">Κορωναϊός. Η χρυσή ευκαιρία της κυνοβουλευτικής δικτατορίας.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-ps" data-rv-view="836" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page102.html" class="text-black">Πώς κυβερνάται ο κόσμος (ομιλία από το μακρινό 1993! )</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-pq" data-rv-view="838" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page101.html" class="text-black">Τηλεφωνική παρέμβαση του Λοχαγού σε εκπομπή με θέμα τα γεγονότα του Εβρου.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-op" data-rv-view="840" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page100.html" class="text-black">Σωτήριος Σοφιανόπουλος. </a><br><a href="page100.html" class="text-black">Ποιοί καί γιατί τόν ήθελαν οικονομικά κατεστραμμένο ;</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-oo" data-rv-view="842" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page99.html" class="text-black">Ελληνοκρατία, το αντίδοτο στον κοινοβουλευτισμό.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">συναγωνιστής Κωνσταντίνος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-on" data-rv-view="844" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page94.html" class="text-black">Όχι να φύγουν οι λαθρομετανάστες αλλά να τους φορτωθούν οι "άλλοι".</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section article" id="msg-box8-om" data-rv-view="846" style="background-image: url(assets/images/2-1920x65561.jpg); padding-top: 80px; padding-bottom: 80px;">
-
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-xs-center">
-                
-                
-                
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-ok" data-rv-view="849" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page98.html" class="text-black">Να παραιτηθούν κάθε ελπίδος όσοι δεν αγωνίζονται.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-oj" data-rv-view="851" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page97.html" class="text-black">Ελλαδικόν Κράτος. Το μόνο κράτος που είναι εναντίον στον λαό του.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-ny" data-rv-view="853" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page93.html#msg-box4-gk" class="text-black">Ελληνοτουρκικά, η φάρσα τού Βερολίνου καί ο πεμπτοφαλαγγίτης μητροπολίτης.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-nx" data-rv-view="855" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page86.html#msg-box4-gk" class="text-black">Η μάστιγα του μεταναστευτικού και ο γραικυλισμός τών ελλήνων</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-nw" data-rv-view="857" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page64.html#msg-box4-gk" class="text-black">Ποιοί είναι πίσω από τόν Ερντογάν.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-o0" data-rv-view="859" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page54.html#msg-box4-gk" class="text-black">Καλά Χριστούγεννα, και όχι καλές γιορτές.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section article" id="msg-box8-mr" data-rv-view="861" style="background-image: url(assets/images/2-1920x6556.jpg); padding-top: 80px; padding-bottom: 80px;">
-
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-xs-center">
-                
-                
-                
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-nu" data-rv-view="864" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page70.html#msg-box4-gk" class="text-black">Ανθελληνικό κέντρο εντός τών τειχών</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας  Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-nt" data-rv-view="866" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page71.html#msg-box4-gk" class="text-black">Ελληνες !! Σηκωθείτε καί Αγωνισθείτε !!&nbsp;</a><div><a href="page71.html#msg-box4-gk" class="text-black">Ομιλία στήν Πρέβεζα</a></div></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-iy" data-rv-view="868" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page44.html#header3-ja" class="text-black">Αεροψεκασμοί. Απαντήσεις από έναν ειδικό.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Νικόλαος &nbsp;Κατσαρός</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-iz" data-rv-view="870" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page43.html#header3-jb" class="text-black">Καλωσόρισμα Β. Στίγκα</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Β.Στίγκας - Ανδρέας Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-ik" data-rv-view="872" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page29.html#header3-jc" class="text-black">Απαγόρευση καπνίσματος, λόγοι υγείας; η μήπως λόγοι εξουσίας;</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας Πετρόπουλος</span></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-il" data-rv-view="874" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page33.html#header3-jd" class="text-black">Αυτήν την φορά θα εκδικηθούμε.
-</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας Πετρόπουλος</span></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section article" id="msg-box8-gh" data-rv-view="876" style="background-image: url(assets/images/2-1920x655.jpg); padding-top: 80px; padding-bottom: 80px;">
-
-    <div class="mbr-overlay" style="opacity: 0.2; background-color: rgb(34, 34, 34);">
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-xs-center">
-                
-                
-                
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-im" data-rv-view="879" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page32.html#header3-je" class="text-black">Αφήγηση της μάχης του Μελιγαλά, απο μιά επιβιώσασα.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ειρήνη Δορκοφίκη</span></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-in" data-rv-view="881" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><div><a href="page34.html#header3-jf" class="text-black">Ο Ανδρέας Πετρόπουλος στην εκπομπή "Η φωνή σου Ελληνα".</a></div></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ενωση Ελλήνων Πατριωτών</span></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-j1" data-rv-view="883" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page35.html#header3-jg" class="text-black">Επίσκεψη του μοναχού Μωυσή εκ Πρεβέζης.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">μοναχός Μωυσής - Ανδρέας Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-iq" data-rv-view="885" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page72.html#header3-jg" class="text-black">Ομιλία στην Θεσσαλονίκη.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-ir" data-rv-view="887" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page37.html#header3-ji" class="text-black">Η Ελλάς χρειάζεται και τον τελευταίο εθνικιστή.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-is" data-rv-view="889" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page38.html#header3-jj" class="text-black">Πώς οι σιωνισταί εργαλειοποιούν προς όφελος τους επιχειρήσεις.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section article" id="msg-box8-j6" data-rv-view="891" style="background-image: url(assets/images/2-1920x65561.jpg); padding-top: 80px; padding-bottom: 80px;">
-
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-xs-center">
-                
-                
-                
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-it" data-rv-view="894" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page39.html#header3-jk" class="text-black">Οσοι εθνικιστές είναι ανένταχτοι, είναι ανύπαρκτοι και εξυπηρετούν τον εχθρό.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Εκπομπή ΕΛΛΗΝΟΚΡΑΤΙΑ</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-iu" data-rv-view="896" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page42.html#header3-jl" class="text-black">Ο Θεός να έχει καλά τους εχθρούς μας</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Εκπομπή ΕΛΛΗΝΟΚΡΑΤΙΑ</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-iv" data-rv-view="898" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page40.html#header3-jm" class="text-black">"Η Κύπρος δεν πρέπει ποτέ να ενωθεί με την μητέρα Ελλάδα"</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Εκπομπή ΕΛΛΗΝΟΚΡΑΤΙΑ</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-iw" data-rv-view="900" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page41.html#header3-jn" class="text-black">Ανδρέας Πετρόπουλος &amp; Κωνσταντίνος Πλεύρης.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Εκπομπή ΕΛΛΗΝΟΚΡΑΤΙΑ</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-j7" data-rv-view="902" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page48.html#header3-jo" class="text-black">Η ''άγνωστη'' καταστροφική συμφωνία τής Βαρκελώνης</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-jp" data-rv-view="904" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page49.html#header3-jo" class="text-black">Εάν δεν φτιάξουμε ελληνικό εθνικιστικό κίνημα μην περιμένουμε καμία σωτηρία.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Εκπομπή ΕΛΛΗΝΟΚΡΑΤΙΑ</span></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section article" id="msg-box8-f5" data-rv-view="906" style="background-image: url(assets/images/2-1920x6556.jpg); padding-top: 80px; padding-bottom: 80px;">
-
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-xs-center">
-                
-                
-                
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-kg" data-rv-view="909" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page50.html#header3-jo" class="text-black">Η Ιστορία - κτηματολόγιο της δυναστείας των Μητσοτάκηδων</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-md" data-rv-view="911" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page51.html#header3-jo" class="text-black">Λογαριασμός εξυπηρετήσεως χρέους,&nbsp;</a><div><a href="page51.html#header3-jo" class="text-black">η μαύρη τρύπα των χρημάτων του ελληνικού λαού</a></div></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-mf" data-rv-view="913" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page73.html#header3-jo" class="text-black">Έλληνες αποτινάξτε τα δεσμά της δουλείας σας.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Εκπομπή ΕΛΛΗΝΟΚΡΑΤΙΑ</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-mi" data-rv-view="915" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page56.html#header3-jo" class="text-black">Οι προδοτικές δηλώσεις του παρελθόντος, απο έναν "μελλοντικό" πρωθυπουργό.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-mp" data-rv-view="917" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page63.html#header3-jo" class="text-black">Η Ανάληψη της εξουσίας απο τον Μητσοτάκη θα είναι και ο πολιτικός του τάφος.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">εκπομπή ΕΛΛΗΝΟΚΡΑΤΙΑ</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-mo" data-rv-view="919" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page62.html#header3-jo" class="text-black">Μιά μεγάλη καταστροφή, μια μεγάλη ευκαιρία.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section article" id="msg-box8-dz" data-rv-view="921" style="background-image: url(assets/images/2-1920x655.jpg); padding-top: 80px; padding-bottom: 80px;">
-
-    <div class="mbr-overlay" style="opacity: 0.2; background-color: rgb(34, 34, 34);">
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-xs-center">
-                
-                
-                
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-mm" data-rv-view="924" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page61.html#header3-jo" class="text-black">Νέος Αρχιεπίσκοπος Αμερικής και εβραϊκή&nbsp;</a><div><a href="page61.html#header3-jo" class="text-black">"επίκληση συνειδήσεως"</a></div></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Συναγωνιστής Κωνσταντίνος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-ml" data-rv-view="926" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page60.html#header3-jo" class="text-black">ΟΙ τράπεζες απο εργαλείο ανάπτυξης, ως μέσο επιβολής της Νέας Τάξης</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">εκπομπή ΕΛΕΥΘΕΡΟΙ ΕΛΛΗΝΕΣ</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-mk" data-rv-view="928" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page58.html#header3-jo" class="text-black">Όλες μας οι καταστροφές προήλθαν απο τους "εθνικόφρονες" της γαλάζιας παράταξης.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">εκπομπή ΕΛΛΗΝΟΚΡΑΤΙΑ</span></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-mh" data-rv-view="930" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page53.html#header3-jo" class="text-black">Με καλεσμένο έναν από τους ιδρυτές του κινήματος της 4ης Αυγούστου</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας Πετρόπουλος - Σπυρίδων &nbsp;Σταυρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-mj" data-rv-view="932" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page55.html#header3-jo" class="text-black">Η εκλογική πορεία του εθνικισμού σε Ευρώπη και Ελλάδα</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">εκπομπή ΕΛΛΗΝΟΚΡΑΤΙΑ</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-mt" data-rv-view="934" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page57.html#header3-jo" class="text-black">Η ψήφος των πολλών και η "λογική του ενός"</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">εκπομπή ΕΛΕΥΘΕΡΟΙ ΕΛΛΗΝΕΣ</span></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section article" id="msg-box8-ni" data-rv-view="936" style="background-image: url(assets/images/2-1920x65561.jpg); padding-top: 80px; padding-bottom: 80px;">
-
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-xs-center">
-                
-                
-                
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-mv" data-rv-view="939" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page66.html#header3-jo" class="text-black">Ο Ελληνας πάντα έβγαζε λόγω συμφέροντος, το μάτι του άλλου έλληνα</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">εκπομπή ΕΛΕΥΘΕΡΟΙ ΕΛΛΗΝΕΣ</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-mw" data-rv-view="941" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page67.html#header3-jo" class="text-black">Αφιερωμένο στους αφελληνισμένους γραικύλους.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Συναγωνιστές Κώστας - Κωνσταντίνος</span></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-nd" data-rv-view="943" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page69.html#header3-jo" class="text-black">Εθνικισμός και Χρόνος</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Συναγωνιστής &nbsp;Κωνσταντίνος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-nc" data-rv-view="945" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page90.html#header3-jo" class="text-black">Εντυπώσεις απο ένα καθολικό - σκανδιναβικό πάσχα</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Συναγωνιστής &nbsp;Μίκης</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-nb" data-rv-view="947" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page68.html#header3-jo" class="text-black">Ο Δούρειος ίππος του "γενεαλογικού" τουρισμού.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-na" data-rv-view="949" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page74.html#header3-jo" class="text-black">Σύντομη αναφορά στον Αντώνιο Φωστερίδη, "Τσαούς Αντόν"</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Συναγωνιστής &nbsp;Κωνσταντίνος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section article" id="msg-box8-cp" data-rv-view="951" style="background-image: url(assets/images/2-1920x655.jpg); padding-top: 80px; padding-bottom: 80px;">
-
-    <div class="mbr-overlay" style="opacity: 0.2; background-color: rgb(34, 34, 34);">
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-xs-center">
-                
-                
-                
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-n9" data-rv-view="954" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><div><br></div><div><a href="page75.html#header3-jo" class="text-black">Οι Αμερικανοί ενδιαφέρθηκαν για τις τουρκικές παραβιάσεις μετά απο 35 χρόνια.</a></div></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">εκπομπή ΕΛΛΗΝΟΚΡΑΤΙΑ</span></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-n8" data-rv-view="956" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page76.html#header3-jo" class="text-black">Κομμουνισταί και λιμπεραλισταί είναι εχθροί του λαού.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">εκπομπή &nbsp;ΕΛΛΗΝΟΚΡΑΤΙΑ</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-n7" data-rv-view="958" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page77.html#header3-jo" class="text-black">Η θέση του εθνικισμού έναντι άλλων φυλών</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Συναγωνιστής &nbsp;Κωνσταντίνος</span></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-mx" data-rv-view="960" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page59.html#msg-box4-gk" class="text-black">Ο Αγώνας της ΕΟΚΑ και η αμέριστη "συμπαράσταση" των κομμουνιστών.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section article" id="msg-box8-cu" data-rv-view="962" style="background-image: url(assets/images/2-1920x6556.jpg); padding-top: 80px; padding-bottom: 80px;">
-
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-xs-center">
-                
-                
-                
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-n6" data-rv-view="965" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page78.html#header3-jo" class="text-black">Ολοκαύτωμα Καλαβρύτων και μαρτυρίες.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">εκπομπή ΕΛΛΗΝΟΚΡΑΤΙΑ</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-n5" data-rv-view="967" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><div><br></div><div><a href="page79.html#header3-jo" class="text-black">Αφιερωμένο σε όσους λένε οτι θέλουν "να πάρουν τα όπλα"</a></div></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Συναγωνιστής Κωνσταντίνος</span></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-nf" data-rv-view="969" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page80.html#header3-jo" class="text-black">Η Μασονία είναι μια κοινωνική αδικία</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-n4" data-rv-view="971" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page81.html#header3-jo" class="text-black">Είμαστε ελληνορθόδοξοι και όχι ιουδαιοχριστιανοί.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">εκπομπή ΕΛΛΗΝΟΚΡΑΤΙΑ</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-n3" data-rv-view="973" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page82.html#header3-jo" class="text-black">Εθνικισμός. Η απαγορευμένη λέξη.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">εκπομπή ΕΛΕΥΘΕΡΟΙ ΕΛΛΗΝΕΣ</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-n2" data-rv-view="975" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page83.html#header3-jo" class="text-black">Αναθεώρηση σκέψης και όχι συντάγματος.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Συναγωνιστής &nbsp;Πέτρος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section article" id="msg-box8-nj" data-rv-view="977" style="background-image: url(assets/images/2-1920x65561.jpg); padding-top: 80px; padding-bottom: 80px;">
-
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-xs-center">
-                
-                
-                
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-n0" data-rv-view="980" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page84.html#header3-jo" class="text-black">Η περίπτωση της Tay, ενός μη πολιτικά ορθού chatrobot.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Συναγωνιστής &nbsp;Κωνσταντίνος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-mz" data-rv-view="982" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page85.html#header3-jo" class="text-black">Η Ελλάς όφειλε να πολεμήσει για την Μακεδονία με την Σερβία το 1992.&nbsp;</a><div><a href="page85.html#header3-jo" class="text-black">Τώρα θα πολεμήσει ΜΟΝΗ της.</a></div></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-nh" data-rv-view="984" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page91.html#header3-jo" class="text-black">Πρωτόκολλα των Σοφών της Σιών. Πλαστά; ή επίκαιρα;</a><div><a href="page91.html#header3-jo" class="text-black">Μέρος 2ον</a></div></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-mq" data-rv-view="986" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page92.html#header3-jo" class="text-black">Η μεγαλύτερη ληστεία όλων των εποχών.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Garret John Loporto</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-ng" data-rv-view="988" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page87.html#header3-jo" class="text-black">Πρωτόκολλα των Σοφών της Σιών. Πλαστά; ή επίκαιρα;</a><div><a href="page87.html#header3-jo" class="text-black">Μέρος 1ον</a></div></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-ne" data-rv-view="990" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page88.html#header3-jo" class="text-black">Αφιέρωμα στόν Βασίλειο Β΄τον Βουλγαροκτόνο.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Σπυρίδων &nbsp;Σταυρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
-</section>
 
 <section class="mbr-section mbr-section-md-padding" id="social-buttons4-my" data-rv-view="992" style="background-color: rgb(193, 193, 193); padding-top: 30px; padding-bottom: 30px;">
     
@@ -2301,17 +1206,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
             </div>
         </div>
-</section>
-
-<section class="mbr-section mbr-section__container article" id="header3-17r" data-rv-view="1003" style="background-color: rgb(239, 239, 239); padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2"><a href="page134.html" class="text-black">Η Διαχρονική προδοσία των πολιτικών.</a></h3>
-                <p class="mbr-section-subtitle"><span style="font-style: normal;">Ανδρέας &nbsp;Πετρόπουλος</span><br></p>
-            </div>
-        </div>
-    </div>
 </section>
 
 
