@@ -293,13 +293,12 @@
                const doc = parser.parseFromString(htmlText, 'text/html');
 
                // Select elements with the specific class
-               const elements = doc.querySelectorAll('h3.mbr-section-title.display-2 a.text-black');
-               const elements2 = doc.querySelectorAll('a.video-link');
+               const elements = doc.querySelectorAll('a.video-link');
                // Iterate over elements and extract the text and href
                const videos = [];
 
 
-               elements2.forEach(element => {
+               elements.forEach(element => {
                  const linkText = element.textContent;
                  const hrefa = element.href;
                  console.log(`Text: ${linkText}, Href: ${hrefa}`);
